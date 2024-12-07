@@ -1,0 +1,107 @@
+/* General Page Styling */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    flex-direction: row; /* Changed from column to row */
+    gap: 40px; /* Adds space between elements */
+  }
+  
+  /* Title Styling */
+  .login-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    background: linear-gradient(90deg, #ff6f61, #42a5f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 40px; /* Space between title and form */
+  }
+  
+  /* Radio Button Container */
+  .login-page div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left */
+    gap: 15px;
+  }
+  
+  /* Radio Button Labels */
+  .login-page label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .login-page label:hover {
+    color: #ff6f61;
+  }
+  
+  /* Radio Button Inputs */
+  .login-page input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Button Styling */
+  .login-page button {
+    background: linear-gradient(90deg, #42a5f5, #1e88e5);
+    color: #fff;
+    border: none;
+    padding: 14px 22px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(30, 136, 229, 0.3);
+    margin-top: 20px; /* Added margin between button and radio options */
+  }
+  
+  .login-page button:hover {
+    background: linear-gradient(90deg, #1e88e5, #1565c0);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(30, 136, 229, 0.5);
+  }
+  
+  /* Button Focus and Active States */
+  .login-page button:focus,
+  .login-page button:active {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(30, 136, 229, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-page {
+      flex-direction: column; /* Stacks the items vertically on smaller screens */
+      gap: 20px; /* Reduces gap between items */
+    }
+  
+    .login-page h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    .login-page button {
+      font-size: 1rem;
+      padding: 12px 18px;
+    }
+  
+    .login-page label {
+      font-size: 1rem;
+    }
+  }
+  
