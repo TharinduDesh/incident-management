@@ -1,0 +1,103 @@
+.incident-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.incident-form-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 150px;
+  max-height: 300px;
+}
+
+.btn-submit {
+  background-color: #3ea175;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 48%; /* Adjust button width to align with Clear button */
+  margin-right: 4%;
+}
+
+.btn-submit:hover {
+  background-color: #2a7c52;
+}
+
+/* Styling for the Clear Button */
+.btn-clear {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 48%; /* Adjust button width to align with Submit button */
+}
+
+.btn-clear:hover {
+  background-color: #d32f2f;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #3ea175;
+  outline: none;
+}
+
+.incident-form-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .incident-form-container {
+    padding: 15px;
+  }
+
+  .btn-submit,
+  .btn-clear {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

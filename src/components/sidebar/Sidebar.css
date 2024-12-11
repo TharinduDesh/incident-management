@@ -1,0 +1,109 @@
+#sidebar {
+  background: #020509;
+  position: fixed; /* Fix the sidebar to the left side */
+  top: 1; /* Align it to the top of the screen */
+  left: -250px; /* Initially hide the sidebar off-screen */
+  width: 250px; /* Set a specific width for the sidebar */
+  height: 100%; /* Make it full height */
+  padding: 20px;
+  z-index: 999; /* Ensure it's on top of other content */
+  transition: all 0.3s ease; /* Smooth transition for when it's shown/hidden */
+}
+
+.sidebar__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f3f4f6;
+  margin-bottom: 30px;
+}
+
+.sidebar__title > div > img {
+  width: 75px;
+  object-fit: contain;
+}
+
+.sidebar__title > div > h1 {
+  font-size: 18px;
+  display: inline;
+}
+
+.sidebar__title > i {
+  font-size: 18px;
+  display: none;
+}
+
+.sidebar__menu > h2 {
+  color: #3ea175;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  font-weight: 700;
+}
+
+.sidebar__link {
+  color: #f3f4f6;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.active_menu_link {
+  background: rgba(62, 161, 117, 0.3);
+  color: #3ea175;
+}
+
+.active_menu_link a {
+  color: #3ea175 !important;
+}
+
+.sidebar__link > a {
+  text-decoration: none;
+  color: #a5aaad;
+  font-weight: 700;
+}
+
+.sidebar__link > i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.sidebar__logout {
+  margin-top: 20px;
+  padding: 10px;
+  color: #e65061;
+}
+
+.sidebar__logout > a {
+  text-decoration: none;
+  color: #e65061;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sidebar__logout > i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Sidebar Responsive Toggle */
+.sidebar-responsive {
+  left: 0 !important; /* When sidebar is open, shift it to the left */
+  position: fixed;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 978px) {
+  #sidebar {
+    left: -250px; /* Sidebar is hidden on small screens */
+  }
+
+  .sidebar-responsive {
+    left: 0 !important; /* Open sidebar on mobile view */
+  }
+
+  .sidebar__title > i {
+    display: inline;
+  }
+}

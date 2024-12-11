@@ -1,0 +1,111 @@
+/* Main Container Styling */
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f4f7fa;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Search and Filter Container */
+.search-filter-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.search-input {
+  width: 70%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.category-select {
+  width: 25%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Grid Layout for Incidents */
+.incident-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column layout */
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.incident-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.incident-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Incident Title */
+.incident-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #1b7e51;
+}
+
+/* Incident Details (Category, Description, Date, etc.) */
+.incident-card p {
+  font-size: 0.9rem;
+  color: #000;
+  margin: 5px 0;
+}
+
+.incident-card p strong {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Loading and Error Message Styling */
+p.loading {
+  color: #3ea175;
+  font-style: italic;
+}
+
+p.error {
+  color: #e65061;
+  font-weight: bold;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .incident-grid {
+    grid-template-columns: 1fr; /* Stack items in a single column for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
